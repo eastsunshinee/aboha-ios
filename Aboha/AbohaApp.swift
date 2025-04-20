@@ -11,7 +11,8 @@ import SwiftUI
 struct AbohaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            HomeView(viewModel: HomeViewModel(createRecordUseCase: MockCreateRecordUseCase()))
         }
     }
 }
